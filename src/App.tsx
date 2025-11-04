@@ -1,6 +1,6 @@
 import { fc } from "./lib/fc";
 import { useEffect, useState } from "react";
-import { useAccount, useConnect, useWriteContract, useWaitForTransactionReceipt } from "wagmi";
+import { useAccount, useWriteContract, useWaitForTransactionReceipt } from "wagmi";
 import { parseEther, parseEventLogs } from "viem";
 import { generateQuoteImage, dataURLtoFile } from "./lib/utils";
 import { quoteNftAbi } from "./lib/abi";
@@ -9,9 +9,6 @@ function App() {
   useEffect(() => {
     fc.ready();
   }, []);
-
-  const { isConnected } = useAccount();
-  const { connect, connectors } = useConnect();
 
   return (
     <main
@@ -31,13 +28,7 @@ function App() {
     >
       <div style={{ width: 420, background: "#1f1f1f", borderRadius: 16, padding: 16, boxShadow: "0 8px 24px rgba(0,0,0,0.5)" }}>
         <h1 style={{ textAlign: "center", marginBottom: 12 }}>Daily Rekt Quote</h1>
-        {!isConnected ? (
-          <button onClick={() => connect({ connector: connectors[0] })} style={{ width: "100%", padding: 12, borderRadius: 12, background: "#7c3aed", color: "white", fontWeight: 700 }}>
-            Connect Wallet
-          </button>
-        ) : (
-          <MintContainer />
-        )}
+        <MintContainer />
       </div>
     </main>
   );
