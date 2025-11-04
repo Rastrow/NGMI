@@ -1,4 +1,4 @@
-const ROOT_URL = "https://ngmi-hi8n8cin4-rafael-puvas-projects.vercel.app";
+const ROOT_URL = "https://ngmi-9yvvor0of-digitalthinker.vercel.app";
 
 export const minikitConfig = {
   accountAssociation: {
