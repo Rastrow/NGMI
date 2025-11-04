@@ -1,5 +1,5 @@
 import { fc } from "./lib/fc";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import { useAccount, useConnect, useWriteContract, useWaitForTransactionReceipt } from "wagmi";
 import { parseEther, parseEventLogs } from "viem";
 import { generateQuoteImage, dataURLtoFile } from "./lib/utils";
