@@ -1,4 +1,4 @@
-import { sdk } from "@farcaster/miniapp-sdk";
+import { fc } from "./lib/fc";
 import { useEffect, useMemo, useState } from "react";
 import { useAccount, useConnect, useWriteContract, useWaitForTransactionReceipt } from "wagmi";
 import { parseEther, parseEventLogs } from "viem";
@@ -7,7 +7,7 @@ import { quoteNftAbi } from "./lib/abi";
 
 function App() {
   useEffect(() => {
-    sdk.actions.ready();
+    fc.ready();
   }, []);
 
   const { isConnected } = useAccount();
@@ -160,7 +160,7 @@ function ShareButton({ tokenId }: { tokenId: string | null }) {
   const appUrl = (import.meta as any).env.NEXT_PUBLIC_APP_URL || (typeof window !== 'undefined' ? window.location.origin : '');
   const share = () => {
     const text = tokenId ? `Minted a Daily Rekt Quote! #${tokenId}` : "Rekt Quote of the day — mint yours";
-    sdk.actions.composeCast({ text, embeds: [appUrl] });
+    fc.composeCast({ text, embeds: [appUrl] });
   };
   return (
     <button onClick={share} style={{ width: "100%", padding: 10, borderRadius: 10, background: "#22c55e", color: "#111", fontWeight: 700 }}>
@@ -171,7 +171,7 @@ function ShareButton({ tokenId }: { tokenId: string | null }) {
 
 function FollowButton() {
   const follow = () => {
-    sdk.actions.openUrl("https://farcaster.xyz/marcow");
+    fc.openUrl("https://farcaster.xyz/marcow");
   };
   return (
     <button onClick={follow} style={{ width: "100%", padding: 10, borderRadius: 10, background: "#7c3aed", color: "#fff", fontWeight: 700 }}>
