@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <style>
+      .bg { fill: #5F9EA0; }
+    </style>
+  </defs>
+  <rect class="bg" x="0" y="0" width="1200" height="630" rx="24" ry="24"/>
+  <!-- Centered logo. Ensure /logo.png exists in public/ -->
+  <image href="/logo.png" x="450" y="165" width="300" height="300" preserveAspectRatio="xMidYMid meet"/>
+</svg>

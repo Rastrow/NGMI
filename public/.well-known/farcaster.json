@@ -1,0 +1,8 @@
+{
+  "name": "Daily Rekt Quote",
+  "description": "Mint and share a daily rekt quote on Base.",
+  "iconUrl": "/logo.png",
+  "splashBackgroundImageUrl": "/splash.svg",
+  "privacyPolicyUrl": "https://example.com/privacy",
+  "termsUrl": "https://example.com/terms"
+}
