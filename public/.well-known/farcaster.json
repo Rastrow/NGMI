@@ -7,6 +7,9 @@
   "websiteUrl": "https://ngmi-hi8n8cin4-rafael-puvas-projects.vercel.app/",
   "privacyPolicyUrl": "https://example.com/privacy",
   "termsUrl": "https://example.com/terms",
+  "baseBuilder": {
+    "ownerAddress": "0x784Bfbdbda35B79EC5C81c91d605bb1e8327f5cF"
+  },
   "accountAssociation": {
     "header": "",
     "payload": "",
