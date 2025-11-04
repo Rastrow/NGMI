@@ -14,7 +14,21 @@ function App() {
   const { connect, connectors } = useConnect();
 
   return (
-    <main style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", background: "#5F9EA0", color: "#fff", padding: 16 }}>
+    <main
+      style={{
+        minHeight: "100vh",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        color: "#fff",
+        padding: 16,
+        backgroundImage: "linear-gradient(rgba(95,158,160,0.92), rgba(95,158,160,0.92)), url(/logo-2.png)",
+        backgroundColor: "#5F9EA0",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "contain",
+        backgroundPosition: "right 5% center",
+      }}
+    >
       <div style={{ width: 420, background: "#1f1f1f", borderRadius: 16, padding: 16, boxShadow: "0 8px 24px rgba(0,0,0,0.5)" }}>
         <h1 style={{ textAlign: "center", marginBottom: 12 }}>Daily Rekt Quote</h1>
         {!isConnected ? (
@@ -88,7 +102,7 @@ function QuoteDisplay({ quote, loading }: { quote: { quote: string; author: stri
   if (!quote) return null;
   return (
     <div style={{ background: "#262626", borderRadius: 12, padding: 16 }}>
-      <blockquote style={{ fontStyle: "italic", fontSize: 18, textAlign: "center" }}>“{quote.quote}”</blockquote>
+      <blockquote style={{ fontStyle: "italic", fontSize: 18, fontWeight: 700, textAlign: "center" }}>“{quote.quote}”</blockquote>
       <div style={{ textAlign: "right", marginTop: 8, color: "#a78bfa" }}>by - {quote.author}</div>
     </div>
   );
