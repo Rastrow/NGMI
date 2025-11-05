@@ -114,7 +114,7 @@ function MintContainer() {
         <button onClick={() => fetchQuote(true)} disabled={loading} style={{ flex: 1, padding: 10, borderRadius: 10, background: "#f59e0b", color: "#111", fontWeight: 700 }}>New Quote</button>
         <MintButton quote={quote} to={address} onMinted={(id) => setTokenId(id)} />
       </div>
-      <ShareButton tokenId={tokenId} />
+      <ShareButton tokenId={tokenId} quote={quote} />
       <FollowButton />
     </div>
   );
@@ -126,7 +126,7 @@ function QuoteDisplay({ quote, loading }: { quote: { quote: string; author: stri
   return (
     <div style={{ background: "#262626", borderRadius: 12, padding: 16 }}>
       <blockquote style={{ fontStyle: "italic", fontSize: 18, fontWeight: 700, textAlign: "center" }}>“{quote.quote}”</blockquote>
-      <div style={{ textAlign: "right", marginTop: 8, color: "#a78bfa" }}>by - {quote.author}</div>
+      <div style={{ textAlign: "center", marginTop: 8, color: "#a78bfa" }}>by - {quote.author}</div>
     </div>
   );
 }
@@ -179,10 +179,14 @@ function MintButton({ quote, to, onMinted }: { quote: { quote: string; author: s
   );
 }
 
-function ShareButton({ tokenId }: { tokenId: string | null }) {
+function ShareButton({ tokenId, quote }: { tokenId: string | null; quote: { quote: string; author: string } | null }) {
   const appUrl = (import.meta as any).env.NEXT_PUBLIC_APP_URL || (typeof window !== 'undefined' ? window.location.origin : '');
   const share = () => {
-    const text = tokenId ? `Minted a Daily Rekt Quote! #${tokenId}` : "Rekt Quote of the day — mint yours";
+    const text = quote
+      ? `“${quote.quote}” — ${quote.author}`
+      : tokenId
+        ? `Minted a Daily Rekt Quote! #${tokenId}`
+        : "Rekt Quote of the day — mint yours";
     fc.composeCast({ text, embeds: [appUrl] });
   };
   return (

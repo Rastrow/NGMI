@@ -1,0 +1,31 @@
+{
+  "frame": {
+    "name": "NGMI Quotes",
+    "version": "1",
+    "iconUrl": "https://digitalthinkerlab.com/wp-content/uploads/2025/11/ChatGPT_Image_4_de_nov._de_2025__11_27_11-removebg-preview-1.png",
+    "homeUrl": "https://ngmi-3gwi.vercel.app",
+    "imageUrl": "https://digitalthinkerlab.com/wp-content/uploads/2025/11/FireShot-Capture-790-NGMI-Quotes-unattractive-saucily-jaylah.ngrok-free.dev_.png",
+    "buttonTitle": "Get a new rekt quote 💀",
+    "splashImageUrl": "https://ngmi-3gwi.vercel.app/splash.png",
+    "splashBackgroundColor": "#5e9ea0",
+    "webhookUrl": "https://ngmi-3gwi.vercel.app/api/webhook",
+    "primaryCategory": "entertainment",
+    "subtitle": "Daily dose of rekt wisdom from the crypto trenches.",
+    "description": "A Farcaster mini app delivering legendary “rekt” quotes from the blockchain battlefield. Whether you’re a diamond hand, a paper hand, or just lost in the memecoin abyss, NGMI keeps your morale (and humor) alive. 😂💸",
+    "screenshotUrls": [
+      "https://digitalthinkerlab.com/wp-content/uploads/2025/11/FireShot-Capture-790-NGMI-Quotes-unattractive-saucily-jaylah.ngrok-free.dev_.png"
+    ],
+    "tags": [
+      "crypto",
+      "degen"
+    ],
+    "tagline": "Laugh the bear market.",
+    "ogTitle": "The ultimate rekt wisdom",
+    "ogDescription": "Laugh at the chaos of crypto app that generates painfully funny quotes from the rekt side of Web3"
+  },
+  "accountAssociation": {
+    "header": "eyJmaWQiOjEwMjUyMTAsInR5cGUiOiJhdXRoIiwia2V5IjoiMHg1NmRBNzMyQWNGNzg0Y0IwY0M3RTk5N2I1MjMyNTQ5Yjc4RTIyNzMzIn0",
+    "payload": "eyJkb21haW4iOiJuZ21pLTNnd2kudmVyY2VsLmFwcCJ9",
+    "signature": "2H4T5Ni+FZYg7YbkB1jC2gtPRYvspHTBBwoX4ZANvK9iBOqdoYfBcANqxdZF8gJTOLFZd+pocOc+8dl8iys2Uxw="
+  }
+}

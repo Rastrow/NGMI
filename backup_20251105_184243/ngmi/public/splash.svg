@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="overlay" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5F9EA0" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#5F9EA0" stop-opacity="0.95"/>
+    </linearGradient>
+    <clipPath id="rounded">
+      <rect x="0" y="0" width="1200" height="630" rx="24" ry="24"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#rounded)">
+    <!-- Face background image; ensure /logo-2.png exists in public/ -->
+    <image href="/logo-2.png" x="600" y="-40" width="700" height="700" opacity="0.22" preserveAspectRatio="xMidYMid meet"/>
+    <!-- Teal overlay to match app background -->
+    <rect x="0" y="0" width="1200" height="630" fill="url(#overlay)"/>
+  </g>
+</svg>
