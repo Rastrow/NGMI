@@ -1,4 +1,4 @@
-const ROOT_URL = "https://ngmi-9yvvor0of-digitalthinker.vercel.app";
+const ROOT_URL = "https://ngmi-beta.vercel.app";
 
 export const minikitConfig = {
   accountAssociation: {
@@ -9,7 +9,7 @@ export const minikitConfig = {
   miniapp: {
     version: "1",
     name: "Daily Rekt Quote",
-    subtitle: "Mintable rekt quotes, refreshed daily on Base.",
+    subtitle: "Daily rekt quotes on Base",
     description:
       "Daily Rekt Quote lets you mint and share a fresh rekt quote on Base each day. Collect your streak, post to Farcaster, and keep the rekt vibes onchain.",
     screenshotUrls: [
@@ -22,7 +22,6 @@ export const minikitConfig = {
     primaryCategory: "social",
     tags: ["social", "quotes", "base"],
     heroImageUrl: `${ROOT_URL}/splash.svg`,
-    tagline: "",
     ogTitle: "Daily Rekt Quote",
     ogDescription: "Mint and share a daily rekt quote on Base.",
     ogImageUrl: `${ROOT_URL}/splash.svg`,

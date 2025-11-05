@@ -1,31 +1,30 @@
 {
   "name": "Daily Rekt Quote",
-  "subtitle": "Mintable rekt quotes, refreshed daily on Base.",
+  "subtitle": "Daily rekt quotes on Base",
   "description": "Daily Rekt Quote lets you mint and share a fresh rekt quote on Base each day. Collect your streak, post to Farcaster, and keep the rekt vibes onchain.",
-  "iconUrl": "https://ngmi-9yvvor0of-digitalthinker.vercel.app/splash.svg",
+  "iconUrl": "https://ngmi-beta.vercel.app/splash.svg",
   "splashBackgroundImageUrl": "/splash.svg",
-  "websiteUrl": "https://ngmi-9yvvor0of-digitalthinker.vercel.app/",
+  "websiteUrl": "https://ngmi-beta.vercel.app/",
   "privacyPolicyUrl": "https://example.com/privacy",
   "termsUrl": "https://example.com/terms",
   "miniapp": {
     "version": "1",
     "name": "Daily Rekt Quote",
-    "subtitle": "Mintable rekt quotes, refreshed daily on Base.",
+    "subtitle": "Daily rekt quotes on Base",
     "description": "Daily Rekt Quote lets you mint and share a fresh rekt quote on Base each day. Collect your streak, post to Farcaster, and keep the rekt vibes onchain.",
     "screenshotUrls": [
-      "https://ngmi-9yvvor0of-digitalthinker.vercel.app/splash.svg"
+      "https://ngmi-beta.vercel.app/splash.svg"
     ],
-    "iconUrl": "https://ngmi-9yvvor0of-digitalthinker.vercel.app/splash.svg",
-    "splashImageUrl": "https://ngmi-9yvvor0of-digitalthinker.vercel.app/splash.svg",
+    "iconUrl": "https://ngmi-beta.vercel.app/splash.svg",
+    "splashImageUrl": "https://ngmi-beta.vercel.app/splash.svg",
     "splashBackgroundColor": "#000000",
-    "homeUrl": "https://ngmi-9yvvor0of-digitalthinker.vercel.app",
+    "homeUrl": "https://ngmi-beta.vercel.app",
     "primaryCategory": "social",
     "tags": ["social", "quotes", "base"],
-    "heroImageUrl": "https://ngmi-9yvvor0of-digitalthinker.vercel.app/splash.svg",
-    "tagline": "",
+    "heroImageUrl": "https://ngmi-beta.vercel.app/splash.svg",
     "ogTitle": "Daily Rekt Quote",
     "ogDescription": "Mint and share a daily rekt quote on Base.",
-    "ogImageUrl": "https://ngmi-9yvvor0of-digitalthinker.vercel.app/splash.svg"
+    "ogImageUrl": "https://ngmi-beta.vercel.app/splash.svg"
   },
   "baseBuilder": {
     "ownerAddress": "0x784Bfbdbda35B79EC5C81c91d605bb1e8327f5cF"
