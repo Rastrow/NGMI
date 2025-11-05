@@ -1,4 +1,3 @@
-
 {
   "frame": {
     "name": "NGMI Quotes",
@@ -11,7 +10,7 @@
     "splashBackgroundColor": "#5e9ea0",
     "webhookUrl": "https://ngmi-3gwi.vercel.app/api/webhook",
     "primaryCategory": "entertainment",
-    "subtitle": "Daily dose of rekt wisdom from the crypto trenches.",
+    "subtitle": "Mintable rekt quotes on Base",
     "description": "A Farcaster mini app delivering legendary “rekt” quotes from the blockchain battlefield. Whether you’re a diamond hand, a paper hand, or just lost in the memecoin abyss, NGMI keeps your morale (and humor) alive. 😂💸",
     "screenshotUrls": [
       "https://digitalthinkerlab.com/wp-content/uploads/2025/11/FireShot-Capture-790-NGMI-Quotes-unattractive-saucily-jaylah.ngrok-free.dev_.png"

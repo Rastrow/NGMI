@@ -30,8 +30,8 @@
     "ownerAddress": "0x784Bfbdbda35B79EC5C81c91d605bb1e8327f5cF"
   },
   "accountAssociation": {
-    "header": "",
-    "payload": "",
-    "signature": ""
+    "header": "eyJmaWQiOjEwMjUyMTAsInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHhBOTdlMzBiRjQyNGY5RDIyQTg3Mjc3ZjhmMEE0NDIwZTJiMDM0ODc0In0",
+    "payload": "eyJkb21haW4iOiJuZ21pLWJldGEudmVyY2VsLmFwcCJ9",
+    "signature": "SdMTNCZR7dwV1TLummdzEg8bt2xiOWxnV7tVryrJyWQomLb+SY3b1yG4dDkbPqmJxItBqyi2xrN2Tf7EgbLzwxs="
   }
 }
