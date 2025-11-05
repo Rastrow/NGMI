@@ -1,10 +1,19 @@
 import { readFile } from "fs/promises";
 import { dirname, resolve } from "path";
 import { fileURLToPath } from "url";
+import { createRequire } from "module";
 
 export type Quote = { quote: string; author: string };
 
 export async function loadQuotes(): Promise<Quote[]> {
+  // 0) Try bundling the JSON via createRequire so serverless packs it
+  try {
+    const require = createRequire(import.meta.url);
+    const data = require("../quotes.json");
+    if (Array.isArray(data)) return data as Quote[];
+    if (data?.default && Array.isArray(data.default)) return data.default as Quote[];
+  } catch {}
+
   // 1) Try reading from project root (works well on Vercel when the file is included in the output)
   try {
     const rootPath = resolve(process.cwd(), "quotes.json");
