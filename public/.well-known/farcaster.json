@@ -2,8 +2,7 @@
   "name": "Daily Rekt Quote",
   "subtitle": "Daily rekt quotes on Base",
   "description": "Daily Rekt Quote lets you mint and share a fresh rekt quote on Base each day. Collect your streak, post to Farcaster, and keep the rekt vibes onchain.",
-  "iconUrl": "https://ngmi-beta.vercel.app/splash.svg",
-  "splashBackgroundImageUrl": "/splash.svg",
+  "iconUrl": "https://ngmi-beta.vercel.app/logo.png",
   "websiteUrl": "https://ngmi-beta.vercel.app/",
   "privacyPolicyUrl": "https://example.com/privacy",
   "termsUrl": "https://example.com/terms",
@@ -13,18 +12,18 @@
     "subtitle": "Daily rekt quotes on Base",
     "description": "Daily Rekt Quote lets you mint and share a fresh rekt quote on Base each day. Collect your streak, post to Farcaster, and keep the rekt vibes onchain.",
     "screenshotUrls": [
-      "https://ngmi-beta.vercel.app/splash.svg"
+      "https://ngmi-beta.vercel.app/logo.png"
     ],
-    "iconUrl": "https://ngmi-beta.vercel.app/splash.svg",
-    "splashImageUrl": "https://ngmi-beta.vercel.app/splash.svg",
+    "iconUrl": "https://ngmi-beta.vercel.app/logo.png",
+    "splashImageUrl": "https://ngmi-beta.vercel.app/logo.png",
     "splashBackgroundColor": "#000000",
     "homeUrl": "https://ngmi-beta.vercel.app",
     "primaryCategory": "social",
     "tags": ["social", "quotes", "base"],
-    "heroImageUrl": "https://ngmi-beta.vercel.app/splash.svg",
+    "heroImageUrl": "https://ngmi-beta.vercel.app/logo.png",
     "ogTitle": "Daily Rekt Quote",
     "ogDescription": "Mint and share a daily rekt quote on Base.",
-    "ogImageUrl": "https://ngmi-beta.vercel.app/splash.svg"
+    "ogImageUrl": "https://ngmi-beta.vercel.app/logo.png"
   },
   "baseBuilder": {
     "ownerAddress": "0x784Bfbdbda35B79EC5C81c91d605bb1e8327f5cF"
