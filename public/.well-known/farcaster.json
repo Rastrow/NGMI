@@ -21,7 +21,7 @@
     "primaryCategory": "social",
     "tags": ["social", "quotes", "base"],
     "heroImageUrl": "https://ngmi-beta.vercel.app/logo.png",
-    "ogTitle": "Daily Rekt Quote",
+    "ogTitle": "Generate your Rekt Quote now",
     "ogDescription": "Mint and share a daily rekt quote on Base.",
     "ogImageUrl": "https://ngmi-beta.vercel.app/logo.png"
   },
