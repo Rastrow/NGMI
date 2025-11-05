@@ -2,9 +2,9 @@ const ROOT_URL = "https://ngmi-9yvvor0of-digitalthinker.vercel.app";
 
 export const minikitConfig = {
   accountAssociation: {
-    header: "",
-    payload: "",
-    signature: "",
+    header: "eyJmaWQiOjEwMjUyMTAsInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHhBOTdlMzBiRjQyNGY5RDIyQTg3Mjc3ZjhmMEE0NDIwZTJiMDM0ODc0In0",
+    payload: "eyJkb21haW4iOiJuZ21pLXR3by52ZXJjZWwuYXBwIn0",
+    signature: "MHg4ZjliNTBjMTM5M2QzNWMxZDQxZjA4YjNlNzVjZmJjYWU2MThlMDMzNmQ2MDliYTEyNTUwYzdiYjM3NGFiMDRkMjk2MjdmYjdmMmUwNGYzOGZhZjg2YzJhYzdkMDEwNTRmNzI1Mjk2Y2JjM2VlYmM1ODQ1Yzc0ZWI2YTk3YmIxYjFi",
   },
   miniapp: {
     version: "1",

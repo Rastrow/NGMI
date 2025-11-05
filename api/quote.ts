@@ -1,7 +1,7 @@
 import type { IncomingMessage, ServerResponse } from "http";
 import { loadQuotes } from "./_utils";
 
-export default async function handler(req: IncomingMessage, res: ServerResponse) {
+export default async function handler(_req: IncomingMessage, res: ServerResponse) {
   try {
     const quotes = await loadQuotes();
     const today = new Date().toISOString().slice(0, 10);

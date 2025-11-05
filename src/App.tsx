@@ -63,7 +63,20 @@ function MintContainer() {
         const data2 = await res2.json();
         setQuote(data2);
       } catch {
-        setQuote({ quote: 'Failed to load quote', author: 'System' });
+        // Final fallback: load bundled quotes.json on client and pick deterministic quote for today
+        try {
+          const mod: any = await import("../quotes.json");
+          const arr = (mod?.default ?? mod) as Array<{ quote: string; author: string }>;
+          if (Array.isArray(arr) && arr.length > 0) {
+            const today = new Date().toISOString().slice(0, 10);
+            const idx = Math.abs([...today].reduce((a, c) => (a * 33 + c.charCodeAt(0)) | 0, 5381)) % arr.length;
+            setQuote(arr[idx]);
+          } else {
+            setQuote({ quote: 'Failed to load quote', author: 'System' });
+          }
+        } catch {
+          setQuote({ quote: 'Failed to load quote', author: 'System' });
+        }
       }
     } finally {
       setTokenId(null);
