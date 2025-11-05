@@ -13,21 +13,40 @@ function App() {
   return (
     <main
       style={{
+        position: "relative",
         minHeight: "100vh",
+        width: "100%",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
         color: "#fff",
         padding: 16,
-        backgroundImage: "linear-gradient(rgba(95,158,160,0.92), rgba(95,158,160,0.92)), url(/logo-2.png)",
         backgroundColor: "#5F9EA0",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "contain",
-        backgroundPosition: "right 5% center",
+        overflow: "hidden",
       }}
     >
+      <img
+        src="/logo2.png"
+        alt=""
+        aria-hidden
+        style={{
+          position: "absolute",
+          top: "50%",
+          left: "calc(50% + 220px)",
+          transform: "translateY(-50%)",
+          width: 400,
+          height: "auto",
+          opacity: 0.5,
+          pointerEvents: "none",
+          userSelect: "none",
+          filter: "none",
+        }}
+      />
       <div style={{ width: 420, background: "#1f1f1f", borderRadius: 16, padding: 16, boxShadow: "0 8px 24px rgba(0,0,0,0.5)" }}>
-        <h1 style={{ textAlign: "center", marginBottom: 12 }}>Daily Rekt Quote</h1>
+        <h1 style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 12, marginBottom: 12 }}>
+          <img src="/logo2.png" alt="Logo" style={{ width: 64, height: 64, borderRadius: 9999, objectFit: "cover", boxShadow: "0 2px 6px rgba(0,0,0,0.4)" }} />
+          <span>Daily Rekt Quote</span>
+        </h1>
         <MintContainer />
       </div>
     </main>
@@ -167,8 +186,23 @@ function ShareButton({ tokenId }: { tokenId: string | null }) {
     fc.composeCast({ text, embeds: [appUrl] });
   };
   return (
-    <button onClick={share} style={{ width: "100%", padding: 10, borderRadius: 10, background: "#22c55e", color: "#111", fontWeight: 700 }}>
-      📣 Share on Farcaster
+    <button
+      onClick={share}
+      style={{
+        width: "100%",
+        padding: 10,
+        borderRadius: 10,
+        background: "#22c55e",
+        color: "#111",
+        fontWeight: 700,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        gap: 8,
+      }}
+    >
+      <img src="/logo2.png" alt="" aria-hidden style={{ width: 24, height: 24, borderRadius: 9999, objectFit: "cover" }} />
+      <span>Share on Farcaster</span>
     </button>
   );
 }
